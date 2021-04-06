@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main_div{
+    height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+.left{
+    float: left;
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid red; */
+}
+.left img{
+    height: 45%;
+    width: 90%;
+    margin-top: 40%;
+    margin-left: 10%;
+}
+.right{
+    float: left;
+    height: 100%;
+    width: 68%;
+    /* border: 2px solid rgb(0, 255, 34); */
+}
+.right h1{
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.8px;
+    text-align: center;
+    padding-top: 3%;
+    /* border: 2px solid red; */
+}
+form{
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    position: relative;
+}
+.frm_ctrl{
+    float: left;
+    height: 10%;
+    width: 30%;
+    /* border: 2px solid blue; */
+    margin-top: 5%;
+    margin-left: 2%;
+    
+}
+.frm_ctrl input{
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid whitesmoke;
+    margin-top: 4%;
+    width: 85%;
+    color: whitesmoke;
+    padding-left: 5px;
+    letter-spacing: 2px;
+}
+::placeholder {
+    color: white;
+    word-spacing: 2px;
+}
+.frm_ctrl input:focus{
+    border-color: greenyellow;
+}
+.frm_ctrl select{
+    border: 0;
+    background: black;
+    outline: none;
+    border-bottom: 2px solid whitesmoke;
+    margin-top: 2%;
+    height: 45%;
+    width: 87%;
+    color: whitesmoke;
+    padding-left: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.frm_ctrl select:focus{
+    border-color: greenyellow;
+}
+button{
+    height: 8%;
+    width: 26%;
+    position: absolute;
+    right: 8%;
+    bottom: 11%;
+    outline:none;
+    border:none;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: greenyellow;
+}

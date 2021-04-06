@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href={% static 'home1.css' %}>
+    <!-- <link rel="stylesheet" href='../Static/home.css'> -->
+</head>
+<body>
+    <div class="main_div">
+        <div class="left">
+            <img src={% static 'Images/heart.jpg' %}>
+        </div>
+        <div class="right">
+            <h1>Check Are You Heart Diseases Paitent Or Not</h1>
+            <form method="POST" >
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="frm_ctrl">
+                        {% comment %} {{field.label_tag}}<br> {% endcomment %}
+                        {{field}}
+                        {% comment %} <span>{{field.errors | striptags }}</span> {% endcomment %}
+                    </div>
+                {% endfor %}
+                {% comment %} <div class="frm_ctrl">
+                    <input type='text' placeholder='Your Name' />
+                </div> {% endcomment %}
+                
+                {% comment %} <button>Click On</button> {% endcomment %}
+                <!-- <div class="frm_ctrl">
+                    <input type='text' placeholder='ll'/>
+                </div>
+                <div class="frm_ctrl">
+                    <select>
+                        <option>aaa</option>
+                        <option>aaa</option>
+                        <option>aaa</option>
+                        <option>aaa</option>
+                    </select>
+                </div> -->
+
+                <button type='submit'>Click On</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
